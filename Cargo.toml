@@ -29,7 +29,7 @@ pin-project = "1.0"
 tokio = { version = "1.0.0", default-features = false, features = ["io-util"] }
 
 [dependencies.tungstenite]
-version = "0.13.0"
+git = "https://github.com/evervault/tungstenite-rs"
 default-features = false
 
 [dependencies.native-tls-crate]
