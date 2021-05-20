@@ -1,0 +1,2 @@
+[registries]
+evervault-tungstenite = { index = "https://dl.cloudsmith.io/u80J6LOPCSTz93jf/evervault/tungstenite/cargo/index.git" }
