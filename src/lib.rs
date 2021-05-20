@@ -193,6 +193,12 @@ impl<S> WebSocketStream<S> {
         .await
     }
 
+    /// Convert a websocket stream back into the original socket
+    pub fn into_inner(self) -> S {
+        let allow_std = self.inner.into_inner();
+        allow_std.into_inner()
+    }
+
     /// Convert a raw socket into a WebSocketStream without performing a
     /// handshake.
     pub async fn from_partially_read(
